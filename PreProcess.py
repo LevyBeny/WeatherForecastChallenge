@@ -58,6 +58,7 @@ def merge_time1_time2(data, data_name):
                 new_data.at[instance_index,column + "_" + str(row["Time"])] = row[column]
     return new_data
 
+
 def merge_data(data, to_add):
     common_columns = ['Validity_date', 'City']
 
