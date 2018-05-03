@@ -1,4 +1,4 @@
-Validity_date,City,Persist_value_wind,EC_wind_1,EC_wind_2,CO_wind_1,CO_wind_2,C3_wind_1,C3_wind_2,OH_wiind_1,OH_wiind_2
+Validity_date,City,Persist_value_wind,EC_wind_1,EC_wind_2,CO_wind_1,CO_wind_2,C3_wind_1,C3_wind_2,OH_wind_1,OH_wind_2
 01/01/2018,Afula,13,10,9,7,7,12,11,14,15
 01/01/2018,Ashdod,18,19,20,18,20,25,25,18,20
 01/01/2018,Beer Sheva,9,13,12,13,13,14,14,15,16

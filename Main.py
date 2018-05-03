@@ -28,8 +28,10 @@ all_sets = []
 # merge time_1 and time_2 for all sets
 # for data_name in data_names:
 #     data = preproc.read_raw_data(test_dir, "test_"+data_name+".csv")
+#     data.sort_values(['Validity_date', 'City'])
 #     all_sets.append(preproc.merge_time1_time2(data,data_name))
 #     all_sets[-1].to_csv("test_"+data_name+"_merged.csv")
+
 
 # create one data set
 for data_name in data_names:
