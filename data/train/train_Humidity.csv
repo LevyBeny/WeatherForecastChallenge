@@ -1,4 +1,4 @@
-Time,Basis_date,Validity_date,City,Persist_value,EC_humidity,C3_humidity
+Time,Basis_date,Validity_date,City,Persist_value_humidity,EC_humidity,C3_humidity
 2,01/01/2016,02/01/2016,Afula,73,52,35
 1,02/01/2016,02/01/2016,Afula,73,60,37
 2,01/01/2016,02/01/2016,Ashdod,82,61,44
