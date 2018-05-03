@@ -8,12 +8,20 @@ def _date_parser(string):
     return dt.datetime.strptime(string, "%d/%m/%Y")
 
 
-def read_data(dir_path, file_name):
+def read_raw_data(dir_path, file_name):
     parse_dates = ['Basis_date', 'Validity_date']
 
     data = pd.read_csv(dir_path + "/" + file_name, parse_dates=parse_dates,
                        date_parser=_date_parser)
     del data['Basis_date']
+    return data
+
+
+def read_merged_data(dir_path, file_name):
+    parse_dates = ['Validity_date']
+
+    data = pd.read_csv(dir_path + "/" + file_name, parse_dates=parse_dates,
+                       date_parser=_date_parser)
     return data
 
 
@@ -53,8 +61,11 @@ def merge_time1_time2(data, data_name):
 def merge_data(data, to_add):
     common_columns = ['Validity_date', 'City']
 
-    columns_to_append = list(to_add).remove(common_columns)
-    data = data.sort(columns=common_columns, axis=0)
-    to_add = to_add.sort(columns=common_columns, axis=0)
+    columns_to_append = list(to_add)
+    for column in common_columns:
+        columns_to_append.remove(column)
+
+    data = data.sort_values(by=common_columns, axis=0)
+    to_add = to_add.sort_values(by=common_columns, axis=0)
     to_add = pd.DataFrame(to_add[columns_to_append])
     return pd.concat([data, to_add], axis=1)

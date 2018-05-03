@@ -1,4 +1,4 @@
-Time,Basis_date,Validity_date,City,Persist_value,EC_maxTemp,CO_maxTemp,C3_maxTemp,OH_maxTemp
+Time,Basis_date,Validity_date,City,Persist_value_maxTemp,EC_maxTemp,CO_maxTemp,C3_maxTemp,OH_maxTemp
 2,01/01/2016,02/01/2016,Afula,12,12,12,12,13
 1,02/01/2016,02/01/2016,Afula,12,11,11,12,13
 2,01/01/2016,02/01/2016,Ashdod,15,13,13,14,14
